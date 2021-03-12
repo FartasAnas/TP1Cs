@@ -12,7 +12,7 @@ namespace EX_TP
         private static int cpt=0;
         private readonly Client titulaire;
         private MAD sold;
-        private static MAD plafond=new MAD(100000000);
+        private static MAD plafond=new MAD(100000);
 
 
         public Compt(Client c,double v)
