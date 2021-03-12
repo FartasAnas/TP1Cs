@@ -26,7 +26,7 @@ namespace EX_TP
             if (somme > 0)
             {
                 sold += somme;
-                Console.Write("New solde:");
+                Console.Write("New solde crediteur:");
                 sold.afficher();
                 return true;
             }
@@ -46,7 +46,7 @@ namespace EX_TP
                     if (sold > somme)
                     {
                         sold -= somme;
-                        Console.Write("New solde:");
+                        Console.Write("New solde debiteur:");
                         sold.afficher();
                         return true;
                     }
@@ -68,7 +68,7 @@ namespace EX_TP
         }
         public bool verser(Compt c,MAD somme)
         {
-            if (this.debiter(somme) != true && c.crediter(somme) != true)
+            if (this.debiter(somme) == true && c.crediter(somme) == true)
             {
                 return true;
             }
